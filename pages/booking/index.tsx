@@ -3,7 +3,6 @@ import OrderSummary from "../../components/booking/OrderSummary";
 import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
-import FormData from "../../node_modules/axios/lib/platform/node/classes/FormData";
 
 export default function BookingPage() {
   const [data, setData] = useState({
@@ -17,6 +16,7 @@ export default function BookingPage() {
     billingAddress: "",
   });
   const [loading, setLoading] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [error, setError] = useState(null);
 
   const handleChange = (e) => {
@@ -28,6 +28,7 @@ export default function BookingPage() {
     setError(null);
 
     try {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const response = await axios.post("/api/bookings", data);
       alert("Booking confirmed!");
     } catch (error) {

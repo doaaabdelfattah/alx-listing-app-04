@@ -32,6 +32,7 @@ export interface ButtonProps {
 export interface PropertyProps {
   id: string;
   name: string;
+  description: string;
   address: {
     state: string;
     city: string;

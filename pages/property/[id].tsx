@@ -10,7 +10,7 @@ export default function PropertyPage() {
   const router = useRouter();
   const { id } = router.query;
   const [property, setProperty] = useState(null);
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProperty = async () => {
@@ -31,7 +31,7 @@ export default function PropertyPage() {
   if (loading) {
     return <p>Loading ... </p>;
   }
-  if (!property) return <p>Property not found</p>;
+  if (!property && !loading) return <p>Property not found</p>;
 
   return (
     <div className="container mx-auto p-6">
@@ -39,7 +39,7 @@ export default function PropertyPage() {
         {/* Left Section */}
         <div className="lg:col-span-2">
           <PropertyDetail property={property} />
-          <ReviewSection reviews={property.reviews} />
+          <ReviewSection propertyId={Array.isArray(id) ? id[0] : id} />
         </div>
 
         {/* Right Section */}

@@ -60,13 +60,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     discount: "30",
     reviews: [
       {
-        avatar: "/assets/avatars/user3.png",
+        avatar: "/assets/avatars/user1.png",
         name: "Michael Johnson",
         rating: 4.8,
         comment: "Cozy and well-maintained, perfect for a ski trip.",
       },
       {
-        avatar: "/assets/avatars/user4.png",
+        avatar: "/assets/avatars/user2.png",
         name: "Emily Davis",
         rating: 4.5,
         comment: "Great location but wished there was better heating.",
@@ -95,13 +95,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     discount: "",
     reviews: [
       {
-        avatar: "/assets/avatars/user5.png",
+        avatar: "/assets/avatars/user1.png",
         name: "Chris Walker",
         rating: 4.9,
         comment: "Peaceful and stunning, a hidden gem in the desert.",
       },
       {
-        avatar: "/assets/avatars/user6.png",
+        avatar: "/assets/avatars/user2.png",
         name: "Sophia Lee",
         rating: 4.8,
         comment: "Loved the atmosphere and the privacy.",
@@ -130,13 +130,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     discount: "15",
     reviews: [
       {
-        avatar: "/assets/avatars/user7.png",
+        avatar: "/assets/avatars/user1.png",
         name: "David Kim",
         rating: 4.9,
         comment: "Absolutely stunning penthouse, worth every penny.",
       },
       {
-        avatar: "/assets/avatars/user8.png",
+        avatar: "/assets/avatars/user2.png",
         name: "Laura Bennett",
         rating: 4.7,
         comment: "Great location but a bit noisy at night.",
