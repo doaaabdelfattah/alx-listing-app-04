@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/scrollbar";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.green_btn {
+  @apply rounded-[70px] bg-primary-green flex items-center justify-center font-quicksand font-normal text-primary-white py-1 px-4 text-sm;
+}
+.black_btn {
+  @apply rounded-[70px] flex items-center justify-center font-quicksand text-primary-white font-semibold bg-black px-3 py-1 text-sm;
+}
+
+.outline_btn {
+  @apply rounded-[70px] border-primary-border border flex items-center justify-center font-normal font-quicksand text-black px-4 py-1 text-sm;
+}
+
+.header_text {
+  @apply font-source font-semibold;
+}
+
+/* input {
+  @apply appearance-none outline-none border-none bg-transparent w-full;
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+  display: hidden;
+}
+
+.shadow-right {
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.hover-line {
+  @apply relative; /* Ensure the parent has relative positioning */
+}
+
+.hover-line:hover::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #616161; /* Or use Tailwind's color classes like text-red-600 for the color */
+  position: absolute;
+  bottom: -10px; /* Adjust based on where you want the line */
+}
